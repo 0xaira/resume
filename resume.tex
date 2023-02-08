@@ -1,0 +1,241 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Aira Jena} \\ \vspace{1pt}
+    Patia, Bhubaneswar, Odisha 751024 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8917395148 ~ \href{mailto:0xaira.eth@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{0xaira.eth}} ~ 
+    \href{https://linkedin.com/in/aira-jena/}{\raisebox{-0.2\height}\faLinkedin\ \underline{aira-jena}}  ~
+    \href{https://linkedin.com/in/aira-jena/}{\raisebox{-0.2\height}\faTwitter\ \underline{0xAira}} ~
+    \href{https://github.com/0xaira}
+    {\raisebox{-0.2\height}\faGithub\ \underline{0xaira}} ~
+    \href{https://github.com/0xaira}
+    {\raisebox{-0.2\height}\faGlobe\ \underline{0xaira}}
+    \vspace{-8pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oxford College of Engineering}{Nov. 2022 -- May 2026}
+      {Bachelor of Technology in Computer Science}{Bhubaneshwar, Odisha}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Data Structures
+                \item Blockchain Technology
+                \item Algorithms Analysis
+                \item Database Management
+                \item Artificial Intelligence
+                \item Internet Technology
+                \item Systems Programming
+                \item Computer Architecture
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LearnWeb3DAO}{May 2022 -- August 2022}
+      {Blockchain Developer}{Remote}
+      \resumeItemListStart
+        \resumeItem{Cleared Freshman level , with Solidity and Basic of Blockchain , ERC20 , ERC721.}
+        \resumeItem{Completed Sophomore level in Web3 with knowledge in tech like POW , EVM , GAS , DApp, ICO , NFT collection , DAO and DEX exchange.}
+        \resumeItem{Completed Junior level in Web3 with knowledge of technologies like Layer2 , ENS , Chain link , Graph , IPFS , CERAMIC.}
+        \resumeItem{Completed Senior level in Web3 with proficiency in Technologies like Smart Contract Security , Merkle Trees , Flash Loan , MEV , Flashbots , Gasless transaction and Smart contract Upgradability.}
+        \resumeItem{ Senior Graduate in Web3 from LearnWeb3DAO , with knowledge in field of Smart Contracts and Security , Solidity , DApp , NFT , DAO , DEX and Advanced Blockchain Concepts . Worked on protocol like Graph, Chainlink , IPFS and Aave .}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Supply Chain dApp} $|$ \emph{Solidity, React.js Web3.js} $|$ \href{}{WebApp} $|$ \href{}{Github}}{January 2023}
+          \resumeItemListStart
+            \resumeItem{Used Solidity to write the Supply Chain Smart Contracts which is then compiled, migrated and deployed using Truffle.js on the local blockchain network created using Ganache-cli.}
+            \resumeItem{ Used Web3.js to communicate with the smart contract and local blockchain network}
+            \resumeItem{Used React.js framework to build Supply chain frontend for better component and state lifecycle management.}
+            \resumeItem{Used Nginx(load balancer) to forward requests to frontend and used Express.js for dynamic routing.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Decentralized Voting App} $|$ \emph{Solidity, React.js, Next.js} $|$ \href{}{WebApp} $|$ \href{}{Github}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Created a Voting dApp using Solidity to write the smart contracts and Hardhat for testing and and deploying them to main net.}
+            \resumeItem{Used React.js and Next.js for blockchain application with smart contract, context API for state management .}
+            \resumeItem{Used Web3.js to communicate with the smart contract and local blockchain network.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Play To Earn(P2E) Game} $|$ \emph{ThirdWeb, Next.js, Typescipt, Solidity} $|$ \href{}{WebApp} $|$ \href{}{Github}}{October 2022}
+          \resumeItemListStart
+            \resumeItem{Created full crypto based Play To Earn Game using ThirdWeb, Next.js, Typescipt and Solidity .}
+            \resumeItem{Deployed NFTs Collection and created Edition Drop Contract, Mining Contract, Token Contract for characters of game using Thirdweb SDK.}
+            \resumeItem{Built the frontend with Next.js and Typescipt to improve the developer experience}
+            
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C++, HTML/CSS, JavaScript, SQL, Rust} \\
+     \textbf{Developer Tools}{: VS Code, Google Cloud Platform, Remix IDE, } \\
+     \textbf{Technologies/Frameworks}{: Linux, GitHub, React, Next, Express, Ganache, Truffle, Web3.js, Node, Docker } \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Y Combinator(Forage)}{August-2022}{Full Stack Intern}{Remote}
+            \resumeItemListStart
+                \resumeItem{Added new feature, the kanban board, to move shipping requests, to two new lane statuses (in-progress and complete).}
+                \resumeItem{ Added few functions that take the user event on the frontend and then save it to your database..}
+                \resumeItem{Created insights and ideas backed by data obtained after analysing the latest feature releases.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
